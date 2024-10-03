@@ -1,0 +1,21 @@
+<div id="annual-revenue-calculator">
+      <div id="cal-inputs-annual">
+
+            <div class="cal-input">
+              <label for="occupancy">Occupancy (%):</label>
+              <input type="number" id="occupancy" min="0" max="100" value="48" required><br>
+            </div>
+
+            <div class="cal-input">
+              <label for="average-daily-rate">Average Daily Rate ($):</label>
+              <input type="number" id="average-daily-rate" min="0" value="365" required><br>
+            </div>
+        <button onclick="calculateAnnualRevenue()">Calculate Annual Revenue</button>
+      </div>
+                
+    <div id="cal-results">
+      <p class="heading-calc">Annual Revenue Estimate</p>
+      <p class="rescalc">Estimated Annual Revenue: $<span id="revenue-result">0</span></p>
+    </div>
+</div>
+
